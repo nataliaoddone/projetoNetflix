@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <title>Netflix</title>
+    <!--- css responsivo-->
+    <link rel="stylesheet" href="style/responsive.css">
+    <!-- owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+    <!--owl javascript-->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">Netflix</h2>
+            <nav>
+                <a href="">Inicio</a>
+                <a href="">Series</a>
+                <a href="">Filmes</a>
+                <a href="">Documentarios</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-------------POP UP----------------->
+    <div id="popUp">
+            <img src="img/mini2.jpg" alt="filme">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    
+        <div>
+            <button class="botao" onclick="fecharPopUp()">
+                <i class="fas fa-times-circle"></i>
+                Fechar
+            </button>
+        </div>
+    </div>
+    <!-------------- FIM POP UP ---------->
+
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <h3 class="titulo">House of Cards</h3>
+                <p class="descricao">Set in present day Washington, D.C., House of Cards is the story of Frank Underwood, a ruthless and cunning politician, and his wife Claire who will stop at nothing to conquer everything. This wicked political drama penetrates the shadowy world of greed, sex and corruption in modern D.C.</p>
+                <div class="botoes">
+                    <button role="button" class="botao" onclick="window.open('https://www.youtube.com/watch?v=8QnMmpfKWvo');">
+                        <i class="fas fa-play"></i>
+                        Assistir Agora
+                    </button>
+                    <button role="button" class="botao" onclick="abrirPopUp()">
+                        <i class="fas fa-info-circle"></i>
+                        Mais Informacoes
+                    </button>
+                </div>
+            </div>            
+        </div>
+    </main>
+            <div class="carrousel-filmes">
+                <div class="owl-carousel owl-theme">
+                    <div class="item"> <img class="box-filme" src="img/mini1.jpg" alt=""></div>
+                    <div class="item"> <img class="box-filme" src="img/mini2.jpg" alt=""></div>
+                    <div class="item"> <img class="box-filme" src="img/mini3.jpg" alt=""></div>
+                    <div class="item"> <img class="box-filme" src="img/mini4.jpg" alt=""></div>
+                    <div class="item"> <img class="box-filme" src="img/mini5.jpg" alt=""></div>
+                    <div class="item"> <img class="box-filme" src="img/mini6.jpg" alt=""></div>
+                </div>
+            </div>
+    <footer>
+        <div>
+            <p>Duvidas ligue 0800 761-4631</p>
+        </div>
+        <div class="container">
+            
+            <ul class="listaFooter">
+                <li><a href="#">Perguntas Frequentes</a></li>
+                <li><a href="#">Relacoes com investidores</a></li>
+                <li><a href="#">Formas de Asistir</a></li>
+                <li><a href="#">Informacoes corporativas</a></li>
+                <li><a href="#">Originais Netflix</a></li>
+            </ul>
+
+            <ul class="listaFooter">
+                <li><a href="#">Centro de ajuda</a></li>
+                <li><a href="#">Carreiras</a></li>
+                <li><a href="#">Termos de Uso</a></li>
+                <li><a href="#">Entre em contato</a></li>
+            </ul>
+
+            <ul class="listaFooter">
+                <li><a href="#">Conta</a></li>
+                <li><a href="#">Resgatar cartao pre pago</a></li>
+                <li><a href="#">Privacidade</a></li>
+                <li><a href="#">Teste de Velocidade</a></li>
+            </ul>
+
+            <ul class="listaFooter">
+                <li><a href="#">Imprensa</a></li>
+                <li><a href="#">Comprar Cartao</a></li>
+                <li><a href="#">Termos de Uso</a></li>
+                <li><a href="#">Entre em contato</a></li>
+            </ul>
+
+        </div>
+
+    </footer>
+
+
+
+    <!----Secao de links javascript-->
+    <script src="https://kit.fontawesome.com/c9618ef5a0.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+    <script>
+        function abrirPopUp(){
+            document.getElementById("popUp").style.visibility = "visible"; 
+        }
+
+        function fecharPopUp(){
+            document.getElementById("popUp").style.visibility = "hidden"; 
+        }
+    </script>
+</body>
+</html>
